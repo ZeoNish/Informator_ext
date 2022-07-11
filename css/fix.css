@@ -1,0 +1,99 @@
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-title-holder {
+    text-align: center;
+}
+
+.point-detail__responsible, .tabulator-cell {
+    text-align: center;
+}
+
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content {
+    display: grid !important;
+}
+
+.tabulator .tabulator-header .tabulator-col.tabulator-sortable .tabulator-col-title {
+    padding-right: 0 !important;
+    text-align: center;
+}
+
+.tabulator .tabulator-header .tabulator-col {
+    text-align: center !important;
+}
+
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-sorter {
+    right: -8px !important;
+}
+
+div.tabulator .tabulator-tableHolder .tabulator-table .tabulator-row .tabulator-cell {
+    /*padding: ;*/
+    /*vertical-align: super!important;*/
+}
+
+.tabulator .tabulator-tableHolder .tabulator-placeholder span {
+    color: white !important;
+}
+
+.view-filters .filter__item, .filter-form .filter__item:first-child {
+    /*width: calc(18% - 13px);*/
+}
+
+.filter-form .filter__item {
+    width: calc(14% - 0px) !important;
+    margin-right: 10px !important;
+}
+
+.views-thermal-points .title-page {
+    padding-top: 35px !important;
+}
+
+.point-detail__info .title-page {
+    padding-top: 0 !important;
+}
+
+.tabulator-placeholder span.no_termo {
+    width: 100%;
+    text-align: center;
+    background-color: #9EE355;
+    font-size: 40px !important;
+}
+
+.tabulator .tabulator-footer {
+    justify-content: center;
+}
+
+.view-filters, .filter-form {
+    box-shadow: 0 7px 17px rgb(26 41 52 / 40%) !important;
+}
+
+.header__user-name .dropdown-menu {
+    top: calc(100% + 20px) !important;
+}
+
+.fix-edit-actions {
+    position: fixed;
+    bottom: 6px;
+    border: none!important;
+    left: 0!important;
+    padding-left: 24px!important;
+    margin: 0!important;
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #0091FF gray;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: gray;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #0091FF;
+    border-radius: 0;
+    border: 1px solid gray;
+}

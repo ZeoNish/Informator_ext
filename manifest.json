@@ -1,0 +1,52 @@
+{
+  "name": "Информатор",
+  "version": "3.7",
+  "manifest_version": 2,
+  "description": "Автоматическое уведомление о термических точках. Автор : Переверзев Сергей Николаевич, ЕДДС КМО СК, 2021",
+  "minimum_chrome_version": "40",
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Информатор",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "tabs",
+    "*://firenotification.mchs.gov.ru/*",
+    "storage"
+  ],
+  "web_accessible_resources": [
+    "sound/sound_siren.mp3",
+    "images/icon.png"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "js/jquery-3.6.0.min.js",
+        "js/shortcut.js",
+        "js/actions.js",
+        "js/screenshot.js",
+        "js/popup.js",
+        "js/UI.js",
+        "js/dashboard.js"
+      ],
+      "css": [
+        "css/informator.css",
+        "css/fix.css",
+        "css/UI.css"
+      ],
+      "matches": [
+        "https://firenotification.mchs.gov.ru/*"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/css/weather-icons.min.css);
+
+body {
+  font-size: 18px;
+  height: 300px;
+  width: 450px;
+  margin: 0;
+}
+
+/**/
+body {
+  height: 40px!important;
+}
+
+.widget .weatherIcon, .widget .weatherData, .widget .date {
+  display: none!important;
+}
+
+.widget .btn_left, .widget .btn_right {
+  height: 100%!important;
+}
+/**/
+
+
+.widget h1, .widget h2, .widget h3, .widget h4, .widget h5 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.widget {
+  height: 100%;
+  width: 450px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.widget .weatherIcon{
+  background-color: #f0f8fa;
+  height: 60%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.widget .weatherIcon:before{
+  display: block;
+  content:"\f002";
+  color: #818b8d;
+  font-family: weathericons;
+  font-size: 110px;
+  position: absolute;
+  left: 50%;
+  top: 58%;
+  transform: translate(-50%, -50%);
+}
+
+.widget .weatherData, .widget .date {
+  position: absolute;
+  bottom: 10%;
+  height: 30%;
+}
+
+.widget .weatherData {
+  background-color: #2e3336;
+  width: 100%;
+  left: 0;
+}
+
+.widget .date {
+  background-color: #4dbde2;
+  width: 22%;
+  right: 0;
+}
+
+.widget .btn_left, .widget .btn_right {
+  position: absolute;
+  bottom: 0;
+  height: 10%;
+  width: 50%;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.widget .btn_left {
+  left: 0;
+  width: 100%;
+  background-color: #4fa238;
+}
+
+.widget .btn_right {
+  right: 0;
+  display: none;
+  background-color: #e24d4d;
+}
+
+.widget h1 {
+  color: #c5cdcf;
+  font-family: 'Open Sans';
+  font-weight: 200;
+  font-size: 2.9375em;
+  line-height: 2.9375em;
+  position: absolute;
+  left: 6%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.widget h2 {
+  color: #8f9b9d;
+  font-family: 'Open Sans';
+  font-weight: 200;
+  font-size: 1.1875em;
+  line-height: 1.1875em;
+  position: absolute;
+  top: 24%;
+  left: 27%;
+}
+
+.widget h3 {
+  color: #c5cdcf;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 0.8125em;
+  line-height: 0.8125em;
+  position: absolute;
+  bottom: 25%;
+  left: 27%;
+}
+
+.widget h4 {
+  color: #fff;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.6875em;
+  line-height: 0.6875em;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.widget h5 {
+  color: #fff;
+  font-family: 'Open Sans';
+  font-weight: 500;
+  font-size: 1.8125em;
+  line-height: 28px;
+  position: absolute;
+  bottom: 24%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
